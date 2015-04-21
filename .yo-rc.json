@@ -1,0 +1,34 @@
+{
+  "generator-Angularfarmers": {
+    "uirouter": false,
+    "templateDirectory": "",
+    "directiveDirectory": "",
+    "filterDirectory": "",
+    "serviceDirectory": "",
+    "controllerDirectory": "",
+    "modalDirectory": "",
+    "inject": {
+      "js": {
+        "file": "app/index.html",
+        "marker": "<!-- Add New Component JS Above -->",
+        "template": "<script src=\"<%= filename %>\"></script>"
+      },
+      "less": {
+        "relativeToModule": true,
+        "file": "<%= module %>.less",
+        "marker": "/* Add Component LESS Above */",
+        "template": "@import \"<%= filename %>\";"
+      }
+    },
+    "modules": [
+      {
+        "name": "home",
+        "file": "app/home/home.js"
+      },
+      {
+        "name": "policysummary",
+        "file": "app/policysummary/policysummary.js"
+      }
+    ]
+  }
+}
